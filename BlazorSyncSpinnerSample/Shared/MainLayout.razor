@@ -3,18 +3,18 @@
 @using Syncfusion.Blazor.Spinner
 
 <div class="page">
-    <div class="sidebar">
+    <div class="sidebar" style="z-index:200;">
         <NavMenu />
     </div>
 
     <main>
-        <SfButton CssClass="button" @onclick="@ClickHandler">Show Spinner</SfButton>
-        <div class="top-row px-4">
+        <SfButton id="button" @onclick="@ClickHandler" style="z-index:201;">Show Spinner</SfButton>
+        <div class="top-row px-4" style="z-index:200;">
         </div>
-        <div id="container">
+        <div id="container" style="z-index:100;">
             <SfSpinner @bind-Visible="@VisibleProperty" CssClass="e-spin-overlay" Size="100" Label="Wait please..." Type="SpinnerType.Tailwind" />
         </div>
-        <article class="content px-4">
+        <article class="content px-4" style="z-index:1;">
             @Body
         </article>
     </main>
@@ -27,14 +27,12 @@
         left: 0;
         height: 100vh;
         width: 100vw;
-        z-index: 100;
     }
 
-    .button {
+    #button {
         position: fixed;
-        top:10px;
-        right:10px;
-        z-index: 101 !important;
+        top: 10px;
+        right: 10px;
     }
 
     e-spinner {
