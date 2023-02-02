@@ -1,1 +1,1 @@
-# BlazorSyncSpinnerSample
+#### Blazor Syncfusion Spinner sample
