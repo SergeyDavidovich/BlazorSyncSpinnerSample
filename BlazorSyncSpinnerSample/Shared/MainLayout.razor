@@ -9,7 +9,7 @@
 
     <main>
         <SfButton id="button" @onclick="@ClickHandler" style="z-index:201;">Show Spinner</SfButton>
-        <div class="top-row px-4" style="z-index:200;">
+        <div class="top-row px-4 appbar" style="z-index:200;">
         </div>
         <div id="container" style="z-index:100;">
             <SfSpinner @bind-Visible="@VisibleProperty" CssClass="e-spin-overlay" Size="100" Label="Wait please..." Type="SpinnerType.Tailwind" />
