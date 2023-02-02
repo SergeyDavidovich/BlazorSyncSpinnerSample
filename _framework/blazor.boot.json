@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "BlazorSyncSpinnerSample.dll": "sha256-AI6Rz\/lRzfPM0SLTRQbYRUJO5TqhyjAmhGxd96zgYtI=",
+      "BlazorSyncSpinnerSample.dll": "sha256-fxrrLipq7cn+56t5w58zQRieoaTZZzlYlXoZr2Hvx7w=",
       "Microsoft.AspNetCore.Components.dll": "sha256-eWF\/nAi4aBS6R4iecTEo9GT5k0DgCL0jRX5FPH+o+fI=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-z+1apreRJg+hVdB69WlmJ7+Mkyc2\/2nghy\/CktZ70io=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-uh0BBCV4DXTqYPKKqEhHYIboeuBVOJEAQrBJgUbNrCg=",
