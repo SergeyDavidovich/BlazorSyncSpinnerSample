@@ -1,0 +1,58 @@
+﻿@inherits LayoutComponentBase
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Spinner
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <SfButton CssClass="button" @onclick="@ClickHandler">Show Spinner</SfButton>
+        <div class="top-row px-4">
+        </div>
+        <div id="container">
+            <SfSpinner @bind-Visible="@VisibleProperty" CssClass="e-spin-overlay" Size="100" Label="Wait please..." Type="SpinnerType.Tailwind" />
+        </div>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+<style>
+    #container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+    }
+
+    .button {
+        position: fixed;
+        top:10px;
+        right:10px;
+        z-index: 101 !important;
+    }
+
+    e-spinner {
+        color: wheat;
+    }
+
+    .e-spinner-pane.e-spin-overlay {
+        background-color: rgb(150, 0, 155, 1);
+    }
+</style>
+
+@code {
+    private bool VisibleProperty { get; set; } = false;
+
+    private async Task ClickHandler()
+    {
+        this.VisibleProperty = true;
+        await Task.Delay(3000);
+        this.VisibleProperty = false;
+    }
+}
